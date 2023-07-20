@@ -1,256 +1,276 @@
 body {
-    font-family: 'Rubik', Roboto;
-    font-size: 16px;
+  font-family: "Rubik", Roboto;
+  font-size: 16px;
 
-    display: grid;
-    place-content: center;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 750px) {
-    .product-info {
-        margin-top: auto;
-        margin-bottom: auto;
-        min-width: 415px;
-    }
-    .product-info p,
-    .product-info h1 {
-        text-align: start;
-    }
-    .main-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        overflow: hidden;
-        margin-top: 150px;
-        position: absolute;
-        left: 310px;
-    }
-}
-.background {
-    display: grid;
-    height: 775px;
-    width: 450px;
-    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    z-index: -1;
-    position: absolute;
-    border-radius: 0% 0% 53% 48% / 0% 0% 37% 22%;
-}
-@media (max-width: 475px) {
-    .background {
-        height: 550px;
-        width: 185px;
-        background-image: linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-        z-index: -1;
-        position: absolute;
-        border-bottom-left-radius: 0;
-        border-radius: 0% 100% 100% 0% / 0% 0% 100% 0%;
-    }
-    .main-content {
-        position: relative;
-    }
-}
-.phone-screen {
-    display: grid;
-    overflow: hidden;
-    width: 245px;
-    height: 525px;
-    border: solid 1px white;
-    border-radius: 1.5rem;
-    padding: 0.5rem;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-inline: auto;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-}
-.upper-section {
-    display: grid;
-    min-height: 72px;
-    background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    margin-bottom: 8px;
-}
-.noutch {
-    display: grid;
-    height: 20px;
-    width: 135px;
-    margin-inline: auto;
-    background-color: white;
-    border-bottom-left-radius: 0.85rem;
-    border-bottom-right-radius: 0.85rem;
-}
-.user-picture {
-   display: grid;
-   place-items: center;
-}
-.user-profile {
-    display: grid;
-    grid-template-columns: 1fr 24px 1fr 1fr;
-    color: white;
-}
-.user-profile i {
+  .product-info {
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 12px;
-    text-align: center;
-    color: white;
+    min-width: 415px;
+  }
+  .product-info p,
+  .product-info h1 {
+    text-align: start;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin-top: 150px;
+    position: absolute;
+    left: 310px;
+  }
+}
+.background {
+  display: grid;
+  height: 775px;
+  width: 450px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  z-index: -1;
+  position: absolute;
+  border-radius: 0% 0% 53% 48% / 0% 0% 37% 22%;
+}
+@media (max-width: 475px) {
+  .background {
+    height: 550px;
+    width: 185px;
+    background-image: linear-gradient(
+      to bottom left,
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    z-index: -1;
+    position: absolute;
+    border-bottom-left-radius: 0;
+    border-radius: 0% 100% 100% 0% / 0% 0% 100% 0%;
+  }
+  .main-content {
+    position: relative;
+  }
+}
+.phone-screen {
+  display: grid;
+  overflow: hidden;
+  width: 245px;
+  height: 525px;
+  border: solid 1px white;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.upper-section {
+  display: grid;
+  min-height: 72px;
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-bottom: 8px;
+}
+.notch {
+  display: grid;
+  height: 20px;
+  width: 135px;
+  margin-inline: auto;
+  background-color: white;
+  border-bottom-left-radius: 0.85rem;
+  border-bottom-right-radius: 0.85rem;
+}
+.user-picture {
+  display: grid;
+  place-items: center;
+}
+.user-profile {
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr 1fr;
+  color: white;
+}
+.user-profile i {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 12px;
+  text-align: center;
+  color: white;
 }
 .profile-pic {
-    max-width: 22px;
-    border-radius: 48px;
-    border: solid 1px white;
+  max-width: 22px;
+  border-radius: 48px;
+  border: solid 1px white;
 }
 .user-info {
-    display: grid;
-    min-width: 150px;
-    margin-left: 10px;
+  display: grid;
+  min-width: 150px;
+  margin-left: 10px;
 }
 .user-name {
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-bottom: 0;
-    margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 .user-status {
-    color: rgb(221, 218, 218);
-    font-size: 0.55rem;
-    font-weight: 400;
-    padding-top: 0;
-    margin-top: 0;
+  color: rgb(221, 218, 218);
+  font-size: 0.55rem;
+  font-weight: 400;
+  padding-top: 0;
+  margin-top: 0;
 }
 .chat-box {
-    display: grid;
-    min-height: 475px;
+  display: grid;
+  min-height: 475px;
 }
 .sent-image {
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    justify-content: end;
-    max-width: 240px;
-    gap: 4px;
-    margin: 0;
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: end;
+  max-width: 240px;
+  gap: 4px;
+  margin: 0;
 }
 .dog-image {
-    display: grid;
-    width: 85%;
-    border-radius: 10px;
+  display: grid;
+  width: 85%;
+  border-radius: 10px;
 }
-.sent-messege {
-    display: grid;
-    height: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.sent-message {
+  display: grid;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .sent-text {
-    display: grid;
-    max-width: 150px;
-    font-size: 0.6rem;
-    font-weight: 400;
-    text-align: end;
-    margin-left: auto;
-    margin-right: 14px;
-    color: hsl(240, 1%, 37%);
+  display: grid;
+  max-width: 150px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: end;
+  margin-left: auto;
+  margin-right: 14px;
+  color: hsl(240, 1%, 37%);
 }
-.sent-text p, .receive-text-2 {
-    padding: 0.35rem 0.35rem;
-    border-radius: 8px;
-    margin-bottom: 0;
+.sent-text p,
+.receive-text-2 {
+  padding: 0.35rem 0.35rem;
+  border-radius: 8px;
+  margin-bottom: 0;
 }
-.receive-text-1 p, 
+.receive-text-1 p,
 .receive-text-2 p {
-    color: hsl(276, 55%, 52%);
-    background-color: hsl(277, 74%, 92%);
-    border-radius: 8px;
-    padding: 0.35rem 0.35rem;
-    margin-top: 0;
-    margin-bottom: 0;
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(277, 74%, 92%);
+  border-radius: 8px;
+  padding: 0.35rem 0.35rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.receive-text-1, .receive-text-2 {
-    display: grid;
-    max-width: 140px;
-    font-size: 0.6rem;
-    font-weight: 400;
-    text-align: start;
-    align-items: center;
-    margin: 0 auto 0 10px;
+.receive-text-1,
+.receive-text-2 {
+  display: grid;
+  max-width: 140px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: start;
+  align-items: center;
+  margin: 0 auto 0 10px;
 }
 .receive-text-2 {
-    height: 32px;
-    margin-bottom: 0;
+  height: 32px;
+  margin-bottom: 0;
 }
 .phone-bottom {
-    display: grid;
-    margin-left: 5px;
-    margin-top: 0;
+  display: grid;
+  margin-left: 5px;
+  margin-top: 0;
 }
 .phone-bottom i {
-    padding: 10px 0;
-    margin-left: 10px;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
+  padding: 10px 0;
+  margin-left: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
 }
-.price-plan-30m, .price-plan-1h {
-    display: grid;
-    grid-template-columns: 20px 80px 1fr;
-    max-width: 175px;
-    max-height: 35px;
-    color: white;
-    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    font-size: 0.6rem;
-    font-weight: 400;
-    border-radius: 12px;
-    border-bottom-left-radius: 4px;
-    margin: 0;
+.price-plan-30m,
+.price-plan-1h {
+  display: grid;
+  grid-template-columns: 20px 80px 1fr;
+  max-width: 175px;
+  max-height: 35px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  font-size: 0.6rem;
+  font-weight: 400;
+  border-radius: 12px;
+  border-bottom-left-radius: 4px;
+  margin: 0;
 }
-.price-plan-30m i, .price-plan-1h i {
-    font-size: 14px;
+.price-plan-30m i,
+.price-plan-1h i {
+  font-size: 14px;
 }
 .plan {
-    margin: auto auto auto 14px;
+  margin: auto auto auto 14px;
 }
 .price {
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin: auto 12px auto auto;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: auto 12px auto auto;
 }
-.type-massege {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    margin-bottom: 18px;
-    margin-left: 5px;
+.type-massage {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 18px;
+  margin-left: 5px;
 }
 input {
-    max-width:150px;
-    color: rgb(117, 116, 116);
-    margin-block: auto;
-    padding: 0.5rem;
-    border-style: none;
+  max-width: 150px;
+  color: rgb(117, 116, 116);
+  margin-block: auto;
+  padding: 0.5rem;
+  border-style: none;
 }
-.type-massege i {
-    font-size: 25px;
-    margin-block: auto;
-    margin-inline: auto 10px;
+.type-massage i {
+  font-size: 25px;
+  margin-block: auto;
+  margin-inline: auto 10px;
 }
 .product-info {
-    display: grid;
-    margin-inline: auto;
-    max-width: 300px;
-    gap: 5px;
-    text-align: center;
+  display: grid;
+  margin-inline: auto;
+  max-width: 300px;
+  gap: 5px;
+  text-align: center;
 }
 .product-info p {
-    font-size: 1rem;
-    color: hsl(270, 7%, 64%);
-    line-height: 1.6;
+  font-size: 1rem;
+  color: hsl(270, 7%, 64%);
+  line-height: 1.6;
 }
 h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: hsl(271, 36%, 24%)
+  font-size: 2.5rem;
+  margin: 0;
+  color: hsl(271, 36%, 24%);
 }

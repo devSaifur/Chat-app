@@ -1,94 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>The CSS challenge</title>
+    <title>Chat app</title>
 
-  <link rel="stylesheet" href="styles/genarel.css">
-  
-  <script src="https://kit.fontawesome.com/4b9c10d71d.js" crossorigin="anonymous"></script>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/genarel.css" />
 
-  <div class="background"></div>
-<main>
-  <div class="main-content">
-    <div class="phone-screen">
+    <script
+      defer
+      src="https://kit.fontawesome.com/4b9c10d71d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="background"></div>
 
-      <div class="upper-section">
-        <div class="noutch"></div>
-        <div class="user-profile">
-          <i class="fa-sharp fa-solid fa-chevron-left"></i>
-          <div class="user-picture">
-            <img class="profile-pic" src="images/avatar.jpg" alt="Samuel">
+    <main>
+      <div class="main-content">
+        <div class="phone-screen">
+          <div class="upper-section">
+            <div class="notch"></div>
+            <div class="user-profile">
+              <i class="fa-sharp fa-solid fa-chevron-left"></i>
+              <div class="user-picture">
+                <img class="profile-pic" src="images/avatar.jpg" alt="Samuel" />
+              </div>
+              <div class="user-info">
+                <p class="user-name">Samuel Green</p>
+                <p class="user-status">Available to Walk</p>
+              </div>
+              <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+            </div>
           </div>
-          <div class="user-info">
-            <p class="user-name">Samuel Green</p>
-            <p class="user-status">Available to Walk</p>
+
+          <div class="chat-box">
+            <div class="receive-text-1">
+              <p>That sounds great. I&#39;d be happy with that.</p>
+              <p>Could you send over some pictures of your dog&#44; please?</p>
+            </div>
+
+            <div class="sent-message">
+              <div class="sent-image">
+                <img
+                  class="dog-image"
+                  src="images/dog-image-1.jpg"
+                  alt="a dog"
+                />
+                <img
+                  class="dog-image"
+                  src="images/dog-image-2.jpg"
+                  alt="a dog"
+                />
+                <img
+                  class="dog-image"
+                  src="images/dog-image-3.jpg"
+                  alt="a dog"
+                />
+              </div>
+              <div class="sent-text">
+                <p>Here are a few pictures. She&#39;s a happy girl!</p>
+                <p>Can you make it?</p>
+              </div>
+            </div>
+
+            <div class="receive-text-2">
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+
+            <div class="phone-bottom">
+              <div class="price-plan-30m">
+                <i class="fa-regular fa-circle"></i>
+                <p class="plan">30 minute walk</p>
+                <p class="price">$29</p>
+              </div>
+
+              <div class="price-plan-1h">
+                <i class="fa-regular fa-circle"></i>
+                <p class="plan">1 hour walk</p>
+                <p class="price">$49</p>
+              </div>
+            </div>
+            <div class="type-massage">
+              <input
+                class="type-massage"
+                type="text"
+                placeholder="Type a massage..."
+              />
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
           </div>
-          <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+        </div>
+
+        <div class="product-info">
+          <h1>Simple booking</h1>
+          <p>
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
         </div>
       </div>
-  
-      <div class="chat-box">
-        <div class="receive-text-1">
-          <p>That sounds great. I&#39;d be happy with that.</p>
-          <p>Could you send over some pictures of your dog&#44; please?</p>
-        </div>
-    
-        <div class="sent-messege">
-          <div class="sent-image">
-            <img class="dog-image" src="images/dog-image-1.jpg" alt="a dog">
-            <img class="dog-image" src="images/dog-image-2.jpg" alt="a dog">
-            <img class="dog-image" src="images/dog-image-3.jpg" alt="a dog">
-          </div>
-          <div class="sent-text">
-            <p>Here are a few pictures. She&#39;s a happy girl!</p>
-            <p>Can you make it?</p>
-          </div>
-        </div>
-        
-        <div class="receive-text-2">
-          <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-        </div>
-    
-        <div class="phone-bottom">
-          <div class="price-plan-30m">
-            <i class="fa-regular fa-circle"></i>
-            <p class="plan">30 minute walk</p>
-            <p class="price">$29</p>
-          </div>
-    
-          <div class="price-plan-1h">
-            <i class="fa-regular fa-circle"></i>
-            <p class="plan">1 hour walk</p>
-            <p class="price">$49</p>
-          </div>
-        </div>
-        <div class="type-massege">
-          <input class="type-massege" type="text" placeholder="Type a massege...">
-          <i class="fa-solid fa-circle-chevron-right"></i>
-        </div>
-      </div>
-    </div>
-  
-    <div class="product-info">
-      <h1>Simple booking</h1>
-      <p>
-        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-        discuss arrangements and make bookings. Once the walk has been completed you can rate 
-        your walker and book again all through the chat.
-      </p>
-    </div>
-  </div>
-
-</main>
-  </div>
-</body>
+    </main>
+  </body>
 </html>
